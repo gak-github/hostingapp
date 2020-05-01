@@ -4,13 +4,13 @@ const path = require("path");
 
 module.exports = {
   entry: "./src/index",
-  mode: "development",
+  mode: "production",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 3001,
   },
   output: {
-    publicPath: "https://agurusamy-hostingapp.netlify.app/", //"http://localhost:3001/",
+    publicPath: "http://localhost:3001/",
   },
   module: {
     rules: [
